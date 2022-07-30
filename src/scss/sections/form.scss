@@ -1,0 +1,127 @@
+.popupp {
+    position:fixed;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background: #c9c9c9e6;
+    z-index: 100;
+    overflow-y: auto;
+    padding: 20px;
+
+    .form {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        width: 300px; 
+        height:270px; 
+        position:relative;
+        top: 0;
+        right: 0;
+        margin: auto 0;
+        background: rgb(181,185,186);
+        background: linear-gradient(90deg, rgba(181,185,186,1) 42%,
+                rgba(171,171,173,0.9624649176076681) 62%,
+                rgba(130,130,130,0.9120447495404411) 80%);
+        border-radius: 20px;
+
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+    
+            span, span::after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 2px;
+                width: 100%;
+                background: $black;
+                transform: rotate(45deg);
+            }
+    
+            span:after {
+                content: "";
+                transform: rotate(90deg);
+            }
+        }
+    
+        .input {
+            width: 220px; 
+            height: 20px;  
+            border: 1px solid $grey;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+    
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px; 
+    
+            .form-name {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5px; 
+    
+                .form-text {
+                    font-size: $fs-14px;
+                    margin-bottom: 0px; 
+                }
+            }
+        
+            .form-email {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5px; 
+        
+                .email-text {
+                    font-size: $fs-14px;
+                }
+            }
+        }
+        
+        .form-text-area {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+    
+            .form-question {
+                text-decoration: underline;
+                font-size: $fs-14px; 
+                margin-bottom: 5px;
+            }
+    
+            textarea {
+                width: 220px;
+                height: 100px;
+                resize: none;
+                margin-bottom: 0;
+                border-radius: 10px;
+                padding-left: 10px;
+                font-size: $fs-14px;
+            }
+        }
+    
+        .form-send {
+            width: 100%;
+            padding: 2px 10px;
+
+            a {
+                font-size: $fs-14px;
+            }
+        }
+    }
+
+    &.opened {
+        display: flex;
+        flex-direction: row;
+    }
+}

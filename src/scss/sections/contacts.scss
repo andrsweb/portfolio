@@ -26,6 +26,11 @@
 	}
 
 	&-button {
+		font-family: $bold;
+        font-size: $fs-main;
+        line-height: $lh-p;
+        text-align: center;        
+        color: $white;
 		width: 100%;
 
 		@media all and (min-width: $sm) {
