@@ -39,8 +39,9 @@
 
         &.opened {
             display: flex;
-            padding-bottom: 150px;
-
+            height: 100vh;
+            padding-top: 50px;
+            
             @media all and (min-width: $md) {
                 display: none;
             }
@@ -75,12 +76,17 @@
     .header-lang {
         display: none;
         cursor: pointer;
-        transform: rotate(-90deg)
-            translate(250px, 90px);
+        transform: rotate(90deg)
+            translate(0, -90px);
 
             @media all and (min-width: $sm) {
-                transform: rotate(-90deg)
-                translate(400px, 120px);
+                transform: rotate(90deg)
+                translate(100px, -120px);
+            }
+
+            @media all and (min-width: $sd) {
+                transform: rotate(90deg)
+                translate(120px, -170px);
             }
 
         .lang {
@@ -102,6 +108,7 @@
 
         &.opened {
             display: flex;
+            align-items: center;
 
             @media all and (min-width: $md) {
                 display: none;
