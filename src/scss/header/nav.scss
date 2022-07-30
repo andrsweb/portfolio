@@ -83,10 +83,6 @@
                 translate(400px, 120px);
             }
 
-            @media all and (min-width: $md) {
-                display: flex;
-            }
-
         .lang {
             font-family: $bold;
             font-weight: $fw700;
