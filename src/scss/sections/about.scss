@@ -1,0 +1,37 @@
+.about {
+    padding: 76px 0 78px; // 110 0 50
+    background: $back;
+    text-align: center;
+
+    @media all and (min-width: $xxl) {
+        padding: 114px 0 114px;
+    }
+    
+    h2 {
+        margin-bottom: 38px; 
+
+        @media all and (min-width: $xxl) {
+            margin-bottom: 26px;
+        }
+    }
+
+    &-text {
+        padding: 0 15px;
+
+        @media all and (min-width: $md) {
+            padding: 0 10%;
+        }
+
+        @media all and (min-width: $xxl) {
+            padding: 0 27%;
+        }
+
+        p {
+            margin-bottom: 41px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

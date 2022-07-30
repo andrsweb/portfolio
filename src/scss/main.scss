@@ -7,9 +7,17 @@
 
 // Header styles.
 @import 'header/header';
+@import 'header/nav';
+@import 'header/burger.scss';
 
 // Footer styles.
 @import 'footer/footer';
 
 // Home page sections styles.
-@import 'sections/home/hero';
+@import 'sections/about';
+@import 'sections/skills';
+@import 'sections/portfolio';
+@import 'sections/contacts';
+
+// Buttons
+@import 'common/buttons.scss';

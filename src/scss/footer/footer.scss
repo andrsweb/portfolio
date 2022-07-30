@@ -1,0 +1,50 @@
+.footer {
+	padding: 8px 0 100px; 
+
+	@media all and (min-width: $xxl) {
+		padding: 40px 0 90px;
+	}
+
+	&-items {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 47px; 
+
+		@media all and (min-width: $xxl) {
+            margin-bottom: 40px;
+        }
+
+		.footer-item{
+			margin-right: 50px;
+
+			@media all and (min-width: $xxl) {
+				margin-right: 62px;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				transition: $tr;
+				
+				&:hover {
+					transform-origin: left bottom;
+					transform: rotate(-9deg);
+				}
+			}
+			
+		}
+	}
+
+	p {
+		font-size: $fs-main; 
+		line-height: $lh17px;
+		text-align: center;       
+		color: $grey; 
+
+		@media all and (min-width: $xxl) {
+            font-size: $fs-16px;
+        }
+	}
+}

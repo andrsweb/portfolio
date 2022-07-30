@@ -1,0 +1,54 @@
+.portfolio {
+	padding: 76px 0 83px;
+	background: $back;
+
+	@media all and (min-width: $xxl) {
+		padding: 109px 0 101px ;
+	}
+
+	h2 {
+		text-align: center;
+		margin-bottom: 72px; 
+
+		@media all and (min-width: $xxl) {
+            margin-bottom: 54px;
+        }
+	}
+
+	&-wrapp {
+		margin-bottom: 82px; 
+
+		@media all and (min-width: $xxl) {
+            margin-bottom: 99px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+		}
+
+		.portfolio-img {
+			margin-bottom: 24px;
+			
+			@media all and (min-width: $xxl) {
+				margin-bottom: 39px;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.portfolio-link {
+			text-align: center;
+
+			a {
+				color: $blackd;
+				border-bottom: 1px solid $blackd;
+
+				&:hover {
+					opacity: 0.6;
+				}
+			}
+		}
+	}
+}

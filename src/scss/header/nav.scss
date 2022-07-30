@@ -1,0 +1,115 @@
+.header-nav {
+    position: fixed;
+    width: 100%;
+    background: $white;
+    z-index: 40;
+
+    @media all and (min-width: $md) {
+		background: transparent;
+        position: static;
+        margin-bottom: 40px;
+	}
+
+    @media all and (min-width: $xl) {
+        margin-bottom: 60px;
+    }
+
+    @media all and (min-width: $xxl) {
+        margin-bottom: 32px;
+    }
+
+    .nav-items {
+        display: none; 
+        width: 100%;
+        flex-direction: column;
+        padding-top: 10px;
+
+        @media all and (min-width: $md) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 0;
+            border-bottom: 2px solid $grey;
+            padding-bottom: 15px;
+        }
+
+        @media all and (min-width: $xxl) {
+            padding-bottom: 35px;
+        }
+
+        &.opened {
+            display: flex;
+            padding-bottom: 150px;
+
+            @media all and (min-width: $md) {
+                display: none;
+            }
+        }
+
+        .nav-item{
+            margin-bottom: 40px;
+            font-family: $bold;
+            font-size: $fs-title;
+            animation: marg 1s;
+            padding-left: 20px;
+
+            @media all and (min-width: $md) {
+                font-size: $fs-main;
+                animation: none;
+                margin-bottom: 0;
+                padding-left: 0;
+            }
+
+            @keyframes marg{
+                0% {
+                    margin-bottom: 0;
+                }
+
+                100% {
+                    margin-bottom: 40px;
+                }    
+            }
+        }
+    }
+    
+    .header-lang {
+        display: none;
+        cursor: pointer;
+        transform: rotate(-90deg)
+            translate(250px, 90px);
+
+            @media all and (min-width: $sm) {
+                transform: rotate(-90deg)
+                translate(400px, 120px);
+            }
+
+            @media all and (min-width: $md) {
+                display: flex;
+            }
+
+        .lang {
+            font-family: $bold;
+            font-weight: $fw700;
+            font-size: $fs-title;
+            color: $grey;
+            transition: $tr;
+
+            &:hover {
+                color: $black;
+            }
+        }
+
+        .lang-separ {
+            margin: 0 5px;
+            font-size: $fs-title;
+        }
+
+        &.opened {
+            display: flex;
+
+            @media all and (min-width: $md) {
+                display: none;
+            }
+        }
+    }
+}

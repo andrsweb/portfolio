@@ -1,0 +1,86 @@
+.contacts-button {
+    background: $black;
+    border-radius: 50px;
+    padding: 10px 29px;
+    transition: $tr;   
+    cursor: pointer;
+    border: 0;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    a {
+        font-family: $bold;
+        font-size: $fs-main;
+        line-height: $lh-p;
+        text-align: center;        
+        color: $white;
+    }
+}
+
+.burger-button {
+    width: 32px;
+    height: 19px;
+    position: absolute;
+    top: 25px;
+    right: 57px;
+    transition: $tr;
+    cursor: pointer;  
+    z-index: 30;
+
+    @media all and (min-width: $md) {
+		display: none;
+	}
+
+    span {
+        width: 100%;				
+        height: 4px;
+        position: absolute;
+        top: -5px;
+        right: 0;
+        background: $black;
+
+            &::after, &::before {
+                content: "";
+                width: 100%;
+                position: absolute;
+                top: 6px;
+                right: 0;
+                height: 4px;
+                background: $black;
+            }
+
+            &::before {
+                content: "";
+                top: -6px;
+            }
+        }
+
+        &.active {
+            span {
+                width: 100%;				
+                height: 4px;
+                position: absolute;
+                top: -5px;
+                right: 0;
+                background: transparent;
+            
+                &::after, &::before {
+                    content: "";
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 4px;
+                    background: $grey;
+                    transform: rotate(-45deg);
+                }
+
+                &::before {
+                    content: "";
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }

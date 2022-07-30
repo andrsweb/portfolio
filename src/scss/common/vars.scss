@@ -7,31 +7,37 @@ $xl	: 1200px;
 $xxl: 1366px;
 
 // Font families.
-$ff: 'Roboto', Arial, sans-serif;
+$bold: 'Gilroy-bold', Arial, sans-serif;
+$medium: 'Gilroy-medium', Arial, sans-serif;
+
+// Font weights
+$fw300: 300;
+$fw700: 700;
+$fw900: 900;
 
 // Font sizes.
-$fs-xs	: 12px;
-$fs-sm	: 14px;
-$fs-md	: 16px;
-$fs-lg	: 18px;
-$fs-xl	: 20px;
-
-// Font weights.
-$fw-light	: 300;
-$fw-regular	: 400;
-$fw-medium	: 500;
-$fw-semibold: 600;
-$fw-bold	: 700;
+$fs-14px  : 14px;
+$fs-16px  : 16px;
+$fs-main  : 18px;
+$fs-form  : 28px;
+$fs-title : 34px;
+$fs-h1	  : 47px;
 
 // Line heights.
-$lh			: 1.5;
-$lh-title	: 1.3;
+$lh17px	    : 17px;
+$lh20px	    : 20px;
+$lh-p	    : 22px;
+$lh-title	: 42px;
+$lh-h1      : 59px;
 
 // Colors.
 $white	: #FFFFFF;
 $black	: #000000;
+$blackd : #070707;
+$grey   : #828282;
+$back   : #F6F6F6;
 
 // Others.
-$tr		: 0.35s;
+$tr		: 0.35s ease;
 $radius	: 10px;
 $shadow	: 0 0 10px 10px rgba(0, 0, 0, 0.03);

@@ -1,0 +1,43 @@
+.contacts {
+	padding: 76px 0 40px; 
+
+	@media all and (min-width: $xxl) {
+		padding: 110px 0 45px;
+	}
+
+	&-wrapp {
+		text-align: center;
+
+		h2 {
+			margin-bottom: 32px; 
+
+			@media all and (min-width: $xxl) {
+				margin-bottom: 24px;
+			}
+		}
+	
+		p {
+			margin-bottom: 43px;
+			
+			@media all and (min-width: $xxl) {
+				margin-bottom: 33px;
+			}
+		}
+	}
+
+	&-button {
+		width: 100%;
+
+		@media all and (min-width: $sm) {
+			width: 80%;
+		}
+
+		@media all and (min-width: $md) {
+			width: 50%;
+		}
+
+		@media all and (min-width: $xl) {
+			width: 20%;
+		}
+	}
+}

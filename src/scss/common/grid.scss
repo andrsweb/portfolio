@@ -1,7 +1,7 @@
 .container {
 	width: 100%;
 	max-width: 100%;
-	padding: 0 24px;
+	padding: 0 28px;
 	margin: 0 auto;
 
 	@media all and (min-width: $md) {
@@ -9,16 +9,16 @@
 	}
 
 	@media all and (min-width: $lg) {
-		max-width: 990px
+		max-width: 952px
 	}
 
 	@media all and (min-width: $xl) {
-		max-width: 1200px
+		max-width: 992px
 	}
 
 	&-fluid {
 		width: 100%;
 		max-width: 100%;
-		padding: 0 24px
+		padding: 0 20px
 	}
 }

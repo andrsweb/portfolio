@@ -14,9 +14,9 @@ body {
 	min-width: 300px;
 	display: flex;
 	height: auto;
-	font-family: $ff;
-	font-size: $fs-md;
-	line-height: $lh;
+	font-family: $medium;
+	font-size: $fs-main;
+	line-height: $lh-p;
 	color: $black;
 	background-color: $white
 }

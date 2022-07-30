@@ -4,63 +4,56 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-	font-family: $ff;
-	font-weight: $fw-semibold;
+	font-family: $medium;
 	line-height: $lh-title;
 	margin: 0 0 1rem
 }
 
 h1, .h1 {
-	font-size: 32px;
+	font-family: $bold;
+	font-weight: $fw700;
+	font-size: $fs-h1;
+	line-height: $lh-h1;
+	color: $blackd;
 
-	@media all and (min-width: $sm) {
-		font-size: 36px
+	@media all and (min-width: $xs) {
+		font-size: $fs-h1;
+	}
+
+	@media all and (min-width: $xl) {
+		font-size: $fs-h1;
 	}
 }
 
 h2, .h2 {
-	font-size: 24px;
+	font-family: $bold;
+	font-weight: $fw700;
+	font-size: $fs-title;
 
 	@media all and (min-width: $sm) {
-		font-size: 36px
 	}
-}
-
-h3, .h3 {
-	font-size: 30px
-}
-
-h4, .h4 {
-	font-size: $fs-xl;
-	font-weight: $fw-medium;
-
-	@media all and (min-width: $sm) {
-		font-size: 24px
-	}
-}
-
-h5, .h5 {
-	font-size: $fs-xl
-}
-
-h6, .h6 {
-	font-size: $fs-lg
 }
 
 a {
 	display: inline-block;
 	text-decoration: none;
-	transition: color ease-out $tr
+	color: $grey;
+	font-family: $bold;
+	font-weight: $fw700;
+	transition: color ease-out $tr;
+
+	&:hover {
+		color: $blackd;
+	}	
 }
 
 p {
+	font-size: $fs-main;
 	margin-top: 0;
+	color: $blackd;
+	line-height: $lh-p;
 
 	&:last-of-type {
 		margin-bottom: 0
 	}
-}
-
-b, strong {
-	font-weight: $fw-bold
 }
