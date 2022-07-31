@@ -56,6 +56,10 @@
                 &:hover {
                     color: $black;
                 }
+
+                &.active {
+                    color: $black
+                }
             }
 
             .lang-separ {
