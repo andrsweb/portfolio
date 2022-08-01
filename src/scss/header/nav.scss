@@ -1,5 +1,4 @@
 .header-nav {
-    position: fixed;
     width: 100%;
     background: $white;
     z-index: 40;
@@ -77,18 +76,19 @@
     
     .header-lang {
         display: none;
+        width: 142px;
         cursor: pointer;
         transform: rotate(90deg)
-            translate(-70px, -90px);
+            translate(-200px, -150px);
 
             @media all and (min-width: $sm) {
                 transform: rotate(90deg)
-                translate(-40px, -120px);
+                translate(-200px, -320px);
             }
 
             @media all and (min-width: $sd) {
                 transform: rotate(90deg)
-                translate(0px, -170px);
+                translate(-279px, -403px);
             }
 
         .lang {
@@ -100,13 +100,14 @@
         }
 
         .lang-separ {
+            font-family: $bold;
+            font-weight: $fw700;
             margin: 0 5px;
             font-size: $fs-title;
         }
 
         &.opened {
             display: flex;
-            align-items: center;
 
             @media all and (min-width: $md) {
                 display: none;

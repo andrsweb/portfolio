@@ -1,0 +1,78 @@
+.hero {
+
+    @media all and (min-width: $xxl) {
+        padding-bottom: 102px;
+    }
+    .hero-wrapp {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    
+        @media all and (min-width: $md) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 22px;
+        }
+    
+        h1 {
+            width: 124px;
+        }
+    
+        p {
+            width: 156px;
+    
+            @media all and (min-width: $xxl) {
+                padding-top: 60px;
+            }
+        }
+    
+        .header-lang {
+            display: none;
+            cursor: pointer;
+            height: 18px;
+            transform: rotate(-90deg)
+                translate(20px, 90px);
+    
+                @media all and (min-width: $md) {
+                    display: flex;
+                    transform: rotate(-90deg)
+                    translate(-50px, 25px);
+                }
+    
+                @media all and (min-width: $xxl) {
+                    transform: translate(23px, 63px)
+                            rotate(-90deg);
+                }    
+    
+            .lang {
+                font-family: $bold;
+                font-weight: $fw700;
+                font-size: $fs-16px;
+                color: $grey;
+                transition: $tr;
+    
+                &:hover {
+                    color: $black;
+                }
+    
+                &.active {
+                    color: $black
+                }
+            }
+    
+            .lang-separ {
+                display: flex;
+                justify-content: center;
+                margin: 0 2px;
+                font-family: $bold;
+                font-weight: $fw700;
+            }
+        }
+    }
+    
+    .hero-img {
+        display: flex;
+        justify-content: center;
+    }
+}
+

@@ -13,7 +13,9 @@
 	}
 
 	@media all and (min-width: $xl) {
-		max-width: 992px
+		max-width: 992px;
+		padding: 0 24px;
+		
 	}
 
 	&-fluid {

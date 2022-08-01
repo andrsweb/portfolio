@@ -1,75 +1,32 @@
 .header {
-    padding: 55px 0 77px;
+    padding-top: 55px;
 
     @media all and (min-width: $xxl) {
-        padding: 20px 0 102px ;
+        padding: 20px 0 0px ;
     }
 
-    &-wrapp {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 40px;
+    &.scrolled {
+            position: fixed;
+            width: 100%;
+            background-color: $white;
+            box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05 );
+            padding: 15px 0 ;
+            z-index: 20;
 
-        @media all and (min-width: $md) {
-			flex-direction: row;
-            justify-content: space-between;
-		}
-
-        @media all and (min-width: $xxl) {
-            margin-bottom: 22px;
-        }
-
-        h1 {
-            width: 124px;
-        }
-
-        p {
-            width: 156px;
-
-            @media all and (min-width: $xxl) {
-                padding-top: 60px;
-            }
-        }
-
-        .header-lang {
-            display: none;
-            cursor: pointer;
-            transform: rotate(-90deg)
-                translate(20px, 90px);
-
-                @media all and (min-width: $md) {
-                    display: flex;
-                }
-
-                @media all and (min-width: $xxl) {
-                    transform: translate(90px, 0px)
-                            rotate(-90deg);
-                }    
-
-            .lang {
-                font-family: $bold;
-                font-weight: $fw700;
-                font-size: $fs-16px;
-                color: $grey;
-                transition: $tr;
-
-                &:hover {
-                    color: $black;
-                }
-
-                &.active {
-                    color: $black
-                }
+            @media all and (min-width: $xs) {
+                padding: 20px 0 ;
             }
 
-            .lang-separ {
-                margin: 0 5px;
+            @media all and (min-width: $md) {
+                padding: 0px ;
+            }
+
+            .header-nav {
+                margin-bottom: 15px;
+            }
+
+            .nav-items {
+                padding-bottom: 15px;
             }
         }
     }
-
-    .header-img {
-        display: flex;
-        justify-content: center;
-    }
-}
