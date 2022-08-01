@@ -28,12 +28,7 @@
     transition: $tr;
     cursor: pointer;  
     z-index: 30;
-
-    &.scrolled {
-        top: 30px;
-        right: 31px;
-    }
-
+    
     @media all and (min-width: $md) {
 		display: none;
 	}

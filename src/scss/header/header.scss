@@ -12,6 +12,7 @@
             box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05 );
             padding: 15px 0 ;
             z-index: 20;
+            transition: padding $tr;
 
             @media all and (min-width: $xs) {
                 padding: 20px 0 ;
@@ -28,5 +29,10 @@
             .nav-items {
                 padding-bottom: 15px;
             }
+        }
+
+        .burger-button {
+            top: 30px;
+            right: 31px;
         }
     }
