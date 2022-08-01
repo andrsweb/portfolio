@@ -51,10 +51,6 @@
                 color: $grey;
                 transition: $tr;
     
-                &:hover {
-                    color: $black;
-                }
-    
                 &.active {
                     color: $black
                 }
