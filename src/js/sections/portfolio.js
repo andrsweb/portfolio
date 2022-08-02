@@ -11,7 +11,7 @@ const images = [document.querySelectorAll('.zoom')]
 mediumZoom('.zoom',  {
 	margin: 20,
 	background: '#000000',
-	scrollOffset: 0  
+	scrollOffset: 250  
 })  
 
 
