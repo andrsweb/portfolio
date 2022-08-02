@@ -1,3 +1,11 @@
+import { smoothScrollAnchor } from "smooth-scroll-anchor";
+
+document.addEventListener( 'DOMContentLoaded', () => {
+	'use strict'
+
+	smoothScrollAnchor()
+})
+
 export const setNewLocale = locale => {
 	if( ! locale ) return
 
@@ -15,3 +23,10 @@ export const setNewLocale = locale => {
 		}
 	} )
 }
+
+
+smoothScrollAnchor({
+	behaviour: "smooth", 
+	block: "start", 
+	offset: -100
+	});
