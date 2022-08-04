@@ -7,26 +7,32 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
 const navButton = document.querySelector( '.burger-button' )
 const navItems  = document.querySelector( '.nav-items' )
-const lang = document.querySelector( '.header-lang')
-const targetElement = document.querySelector('#bodyLock');
+const lang = document.querySelector( '.header-lang' )
+const targetElement = document.querySelector( '#bodyLock' )
 
 navButton.addEventListener('click', () => {
 
-	if ( ! navButton.classList.contains('active')) { 
-		navButton.classList.add('active') 
+	if ( ! navButton.classList.contains( 'active' ) ) { 
+		navButton.classList.add( 'active' ) 
 	}	else {
-			navButton.classList.remove('active')
+			navButton.classList.remove( 'active' )
 	}
-	if ( ! navItems.classList.contains('opened')) {
-		navItems.classList.add('opened')
-		disableBodyScroll(targetElement)
+	if ( ! navItems.classList.contains( 'opened' )) {
+		navItems.classList.add( 'opened' )
+		disableBodyScroll( targetElement )
 	}	else {
-			navItems.classList.remove('opened')	
-			enableBodyScroll(targetElement)
+			navItems.classList.remove( 'opened' )	
+			enableBodyScroll( targetElement )
 	}
-	if ( ! lang.classList.contains('opened')) {
-		lang.classList.add('opened')
-	}	else {
-			lang.classList.remove('opened')
-	}
+	if ( ! lang.classList.contains( 'opened' ) ) {
+		lang.classList.add( 'opened' )
+	}	
+})
+
+const closeMenu = document.querySelector( '.nav-items' )
+
+closeMenu.addEventListener('click', () => {
+        closeMenu.classList.remove( 'opened' )
+		navButton.classList.remove( 'active' )
+		enableBodyScroll( targetElement )
 })

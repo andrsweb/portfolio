@@ -31,8 +31,13 @@
         }
 
         .burger-button {
-            top: 24px;
-            right: 31px;
+            top: -13px;
+            right: 4px;
+
+            &.active {
+                top: 25px;
+                right: 4px;
+            }
         }
     } 
 }

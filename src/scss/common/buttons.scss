@@ -6,7 +6,7 @@
     cursor: pointer;
     border: 0;
 
-    &:hover {
+    &:hover, .form-send {
         opacity: 0.6;
     }
 
@@ -19,12 +19,17 @@
     }
 }
 
+.form-send {
+    font-family: $bold;
+    color: $white;
+}
+
 .burger-button {
     width: 32px;
     height: 19px;
     position: absolute;
-    top: 70px;
-    right: 31px;
+    top: 14px;
+    right: 4px;
     transition: $tr;
     z-index: 30;
     cursor: pointer;

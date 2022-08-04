@@ -1,5 +1,6 @@
 .header-nav {
     width: 100%;
+    position: relative;
     background: $white;
     z-index: 40;
 
@@ -78,18 +79,13 @@
         display: none;
         width: 142px;
         cursor: pointer;
-        transform: rotate(90deg)
-            translate(-200px, -150px);
+        transform: rotate(90deg);
+        position: absolute;
+        bottom: 150px;
+        right: -50px;
 
-            @media all and (min-width: $sm) {
-                transform: rotate(90deg)
-                translate(-200px, -320px);
-            }
-
-            @media all and (min-width: $sd) {
-                transform: rotate(90deg)
-                translate(-279px, -403px);
-            }
+        @media all and (min-width: $xs) {
+        }
 
         .lang {
             font-family: $bold;

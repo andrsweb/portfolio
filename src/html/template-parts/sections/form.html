@@ -1,32 +1,25 @@
-<div class="popupp" id="poppupLock">
-    <form class="form" action="">
-        <div class="form-wrapper">
-            <div class="form-name">
-                <div class="form-text">
-                    Your name
-                </div>
-                <input class="input" type="text" placeholder="Enter your name here">
-            </div>
-            <div class="form-email">
-                <div class="email-text">
-                    Your email
-                </div>
-                <input class="input" type="text" placeholder="Enter your email here">
-            </div>
-        </div>
-        <div class="form-text-area">
-            <div class="form-question">
-                Need callback? Contact me
-            </div>
-            <textarea placeholder="Write there..."></textarea>
-        </div>
+<div class="popup" id="popup-lock">
+    <form class="form" action="" method="POST">
+        <fieldset>
+            <legend>
+                Contact me
+            </legend>
+            <label class="form-label" for="">
+                <input id="name" type="text" placeholder="Your name here">
+            </label>
+            <label class="form-label" for="">
+                <input id="email" type="email" placeholder="Your email here">
+            </label>
+            <label class="text-area" for="text-arrea">
+                <legend>Message</legend>
+                <textarea name="" id="text-arrea" placeholder="Write here..."></textarea>
+            </label>
+        </fieldset>
+        <button class="form-send" type="submit">
+            Send
+        </button>
         <div class="close-button">
             <span></span>
-        </div>
-        <div class="form-button">
-            <button class="form-send">
-                <a href="">Send message</a>
-            </button>  
         </div>
     </form>   
 </div>
