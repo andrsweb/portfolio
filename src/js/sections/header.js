@@ -52,8 +52,6 @@ const toggleMobileMenu = () => {
 		const windowWidth = window.innerWidth
 
 		// If window >= medium scrrens width.
-		if( windowWidth >= WINDOW_WIDTH_MD ){
-			closeMobileMenu()
-		}
+		if( windowWidth >= WINDOW_WIDTH_MD ) closeMobileMenu()
 	} )
 }

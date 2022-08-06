@@ -54,13 +54,13 @@
             font-family: $bold;
             font-size: $fs-title;
             animation: marg 1s;
-            padding-left: 20px;
+            padding: 0 20px;
 
             @media all and (min-width: $md) {
                 font-size: $fs-main;
                 animation: none;
                 margin-bottom: 0;
-                padding-left: 0;
+                padding: 0;
             }
 
             @keyframes marg{
