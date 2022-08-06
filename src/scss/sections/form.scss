@@ -38,6 +38,7 @@
         fieldset {
             display: flex;
             flex-direction: column;
+            align-items: center;
             width: 100%;
             border: 0;
 
@@ -45,6 +46,7 @@
                 width: 200px;
                 border-radius: 5px;
                 border-style: ridge;
+                margin-bottom: 10px;
                         
                 &:focus {
                     animation: anim 2s linear alternate-reverse 2000 ;
